@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Exported session transcripts contain code samples; they are not app source. */
+@source not '../session-*.md';
+
 /* Dark mode is driven by a `dark` class on <html>, set before paint in index.html. */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -54,40 +57,40 @@
 
 /* Light theme (default) */
 :root {
-  --background: #fbfbf2;
-  --foreground: #000000;
+  --background: hsl(60, 0%, 97%);
+  --foreground: hsl(0, 0%, 0%);
 
-  --card: #fbfbf2;
-  --card-foreground: #000000;
+  --card: hsl(60, 0%, 97%);
+  --card-foreground: hsl(0, 0%, 0%);
 
-  --muted: #fbfbf2;
-  --muted-foreground: #606060;
+  --muted: hsl(60, 0%, 97%);
+  --muted-foreground: hsl(0, 0%, 38%);
 
-  --primary: #606060;
-  --primary-foreground: #fbfbf2;
+  --primary: hsl(0, 0%, 38%);
+  --primary-foreground: hsl(60, 0%, 97%);
 
-  --border: #ced4da;
-  --ring: #606060;
+  --border: hsl(210, 0%, 83%);
+  --ring: hsl(0, 0%, 38%);
 
   color-scheme: light;
 }
 
 /* Dark theme */
 .dark {
-  --background: #16150f;
-  --foreground: #fbfbf2;
+  --background: hsl(51, 0%, 7%);
+  --foreground: hsl(60, 0%, 97%);
 
-  --card: #1c1a12;
-  --card-foreground: #fbfbf2;
+  --card: hsl(48, 0%, 9%);
+  --card-foreground: hsl(60, 0%, 97%);
 
-  --muted: #242116;
-  --muted-foreground: #8f8874;
+  --muted: hsl(47, 0%, 11%);
+  --muted-foreground: hsl(0, 0%, 78%);
 
-  --primary: #fbfbf2;
-  --primary-foreground: #16150f;
+  --primary: hsl(60, 0%, 97%);
+  --primary-foreground: hsl(51, 0%, 7%);
 
-  --border: #2e2a1d;
-  --ring: #fbfbf2;
+  --border: hsl(46, 0%, 15%);
+  --ring: hsl(60, 0%, 97%);
 
   color-scheme: dark;
 }

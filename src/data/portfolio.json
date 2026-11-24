@@ -22,7 +22,7 @@
   },
   "experience": [
     {
-      "company": "WTW (Willis Towers Watson)",
+      "company": "Willis Towers Watson",
       "role": "Analyst - Software Engineer",
       "location": "Kolkata, WB, India",
       "start": "Jun 2025",
@@ -31,6 +31,17 @@
         "Developing an in-house Knowledge-Based Authentication component using React that secures Genesys Cloud calls while exposing zero PII to agents.",
         "Developing a data aggregator and an engine in .NET Core that produces randomized questions from 20+ internal data sources while supporting 250+ insurance carriers.",
         "Developed a reusable web component to dynamically load compliance templates and process user consent. With a dedicated database architecture, it stores consent states in a single domain for 10+ micro-frontends."
+      ]
+    },
+    {
+      "company": "Mind Webs Ventures",
+      "role": "Full-Stack Intern",
+      "location": "Kolkata, WB, India",
+      "start": "May 2025",
+      "end": "Jun 2025",
+      "highlights": [
+        "Built a standalone vertical frontend from scratch and integrated it with the backend.",
+        "Worked closely with the core engineering team to extend backend functionalities and enforce security standards."
       ]
     },
     {
@@ -45,6 +56,25 @@
       ]
     },
     {
+      "company": "Engineer's Cradle",
+      "role": "Frontend Engineer Intern",
+      "location": "Pune, Maharashtra, India",
+      "start": "Aug 2024",
+      "end": "Jan 2025",
+      "highlights": [
+        "Maintained and published an npm package of reusable UI components.",
+        "Designed advanced hooks for the Next.js app, managing state with Zustand and TanStack Query."
+      ]
+    },
+    {
+      "company": "Google Cloud Skills Boost",
+      "role": "Study Jam Facilitator",
+      "location": "Jalpaiguri, WB, India",
+      "start": "Oct 2023",
+      "end": "Nov 2023",
+      "highlights": []
+    },
+    {
       "company": "Dualite",
       "role": "Software Development Intern",
       "location": "Remote, India",
@@ -55,6 +85,14 @@
         "Rewrote the plugin core algorithm utilising dynamic tree caching to increase conversion throughput by 500% and also enable the plugin to process multiple design frames concurrently.",
         "Added React support to the code output to grow monthly users by 3x (from 5,000 to 20,000+), and added Mixpanel triggers project-wide to capture 200,000+ events monthly."
       ]
+    },
+    {
+      "company": "Google Developer Student Clubs - JGEC",
+      "role": "Web Lead",
+      "location": "Jalpaiguri, WB, India",
+      "start": "Aug 2022",
+      "end": "Jul 2023",
+      "highlights": []
     }
   ],
   "projects": [

@@ -17,10 +17,12 @@ export const linkSchema = z.strictObject({
 export const experienceSchema = z.strictObject({
   company: text,
   role: text,
-  location: text,
+  /** Not every role on LinkedIn lists a location (remote, volunteer, ...). */
+  location: text.optional(),
   start: monthYear,
   end: endDate,
-  highlights: z.array(text).min(1),
+  /** Optional: some older roles have no description on the profile. */
+  highlights: z.array(text).default([]),
 })
 
 export const projectSchema = z.strictObject({
