@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+
+/* Dark mode is driven by a `dark` class on <html>, set before paint in index.html. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Semantic tokens. Anything in @theme becomes a utility, e.g. bg-background,
+ * text-muted-foreground, border-border.
+ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --font-heading:
+    'Inconsolata', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --font-body:
+    'Chivo Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
+
+  /* Type scale: 24px h1, 16px subheadings, 16px body. */
+  --text-heading: 24px;
+  --text-heading-sm: 14px;
+  --text-body: 14px;
+}
+
+/*
+ * Line heights are unitless so they follow the type scale instead of fighting it.
+ * `static` keeps every variable emitted so the base layer can reference them.
+ */
+@theme static {
+  --leading-heading: 1.2;
+  --leading-subheading: 1.6;
+  --leading-body: 1.6;
+  --leading-meta: 1.1;
+  --leading-list: 1;
+
+  --text-heading--line-height: var(--leading-heading);
+  --text-heading-sm--line-height: var(--leading-subheading);
+  --text-body--line-height: var(--leading-body);
+}
+
+/* Light theme (default) */
+:root {
+  --background: #fbfbf2;
+  --foreground: #000000;
+
+  --card: #fbfbf2;
+  --card-foreground: #000000;
+
+  --muted: #fbfbf2;
+  --muted-foreground: #606060;
+
+  --primary: #606060;
+  --primary-foreground: #fbfbf2;
+
+  --border: #ced4da;
+  --ring: #606060;
+
+  color-scheme: light;
+}
+
+/* Dark theme */
+.dark {
+  --background: #16150f;
+  --foreground: #fbfbf2;
+
+  --card: #1c1a12;
+  --card-foreground: #fbfbf2;
+
+  --muted: #242116;
+  --muted-foreground: #8f8874;
+
+  --primary: #fbfbf2;
+  --primary-foreground: #16150f;
+
+  --border: #2e2a1d;
+  --ring: #fbfbf2;
+
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100svh;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 100;
+    line-height: var(--leading-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition:
+      background-color 200ms ease,
+      color 200ms ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-size: var(--text-heading-sm);
+    font-weight: 300;
+    line-height: var(--leading-subheading);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: var(--text-heading);
+    line-height: var(--leading-heading);
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}

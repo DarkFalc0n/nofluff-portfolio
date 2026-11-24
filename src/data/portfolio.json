@@ -1,0 +1,162 @@
+{
+  "name": "Pratyay Roy",
+  "headline": "Analyst - Software Engineer at WTW",
+  "email": "pratyayroy20@gmail.com",
+  "phone": "+91-8583081725",
+  "links": [
+    { "label": "X", "url": "https://x.com/darkfalc0n_" },
+    { "label": "GitHub", "url": "https://github.com/darkfalc0n" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/pratyayroy" },
+    { "label": "LeetCode", "url": "https://leetcode.com/u/DarkFalc0n" },
+    { "label": "Instagram", "url": "https://www.instagram.com/roy.alt.ea" }
+  ],
+  "highlights": [
+    "SWE @wtw",
+    "Contributor @reactbits.dev",
+    "SIH’22 Winner & ’23 Finalist",
+    "Game Dev"
+  ],
+  "resume": {
+    "label": "My Resume",
+    "url": "https://resume.pratyay.dev"
+  },
+  "experience": [
+    {
+      "company": "WTW (Willis Towers Watson)",
+      "role": "Analyst - Software Engineer",
+      "location": "Kolkata, WB, India",
+      "start": "Jun 2025",
+      "end": "Present",
+      "highlights": [
+        "Developing an in-house Knowledge-Based Authentication component using React that secures Genesys Cloud calls while exposing zero PII to agents.",
+        "Developing a data aggregator and an engine in .NET Core that produces randomized questions from 20+ internal data sources while supporting 250+ insurance carriers.",
+        "Developed a reusable web component to dynamically load compliance templates and process user consent. With a dedicated database architecture, it stores consent states in a single domain for 10+ micro-frontends."
+      ]
+    },
+    {
+      "company": "KoinX",
+      "role": "Frontend Developer Intern",
+      "location": "Remote, India",
+      "start": "Jan 2025",
+      "end": "May 2025",
+      "highlights": [
+        "Developed 2 major modules from scratch for the KoinXBooks - Accounting platform using Next.js.",
+        "Migrated the Transactions page from Redux Toolkit to React Query and caching transactions for 500+ wallets client-side, effectively reducing API calls and database reads by over 30%."
+      ]
+    },
+    {
+      "company": "Dualite",
+      "role": "Software Development Intern",
+      "location": "Remote, India",
+      "start": "Jul 2023",
+      "end": "Nov 2023",
+      "highlights": [
+        "Replaced ad-hoc plugin internals with a typed OOP core, cutting release time by 70%, and resulted in 50% decrease in monthly bug report volume.",
+        "Rewrote the plugin core algorithm utilising dynamic tree caching to increase conversion throughput by 500% and also enable the plugin to process multiple design frames concurrently.",
+        "Added React support to the code output to grow monthly users by 3x (from 5,000 to 20,000+), and added Mixpanel triggers project-wide to capture 200,000+ events monthly."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "React Bits",
+      "role": "Open Source Contributor",
+      "description": [
+        "Contributed features and bug fixes to the React Bits repository."
+      ],
+      "tech": ["ReactJs", "ShadCN", "Tailwind", "Typescript"]
+    },
+    {
+      "name": "Buy or Wait?",
+      "description": [
+        "Built a 7-stage financial decision agent for HackerRank Orchestrate (ranked 111 out of 3062) that reconstructs each user’s position from structured profiles, using a mathematical 90-day cash forecast.",
+        "Architected a hybrid agent orchestrator for pre-validated plans and multimodal LLM."
+      ],
+      "tech": ["Python", "OpenAI", "Polars", "Pydantic"]
+    },
+    {
+      "name": "Risk Exposure Tracker",
+      "description": [
+        "Full stack application with dashboard for organizations to track risks and manage mitigations.",
+        "Github Actions to build and deploy the API and SPA to Azure Web Apps."
+      ],
+      "tech": ["ASP.Net", "React", "Tailwind", "Azure SQL", "MS Azure"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jalpaiguri Government Engineering College (Autonomous)",
+      "degree": "Bachelor of Technology",
+      "field": "Information Technology",
+      "gpa": "8.63/10",
+      "location": "Jalpaiguri, WB, India",
+      "start": "Jul 2021",
+      "end": "Jun 2025"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "C++",
+        "C#",
+        "Golang",
+        "Typescript",
+        "Javascript",
+        "Bash",
+        "SQL",
+        "Python"
+      ]
+    },
+    {
+      "category": "Frameworks",
+      "items": ["NodeJS", "Bun", ".NET", "React", "ExpressJs", "MySQL"]
+    },
+    {
+      "category": "Developer Tools",
+      "items": ["Git", "Docker", "Redis", "Kafka", "Nginx"]
+    },
+    {
+      "category": "Platforms",
+      "items": [
+        "Linux (Ubuntu, Arch)",
+        "Azure",
+        "Github",
+        "Web",
+        "Windows",
+        "AWS"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Google Summer of Code 2024",
+      "detail": "Selected as a contributor to Joplin."
+    },
+    {
+      "title": "Smart India Hackathon 2022",
+      "detail": "Won 1st place in the Archaeological Gamification category; finalist in the 2023 edition."
+    },
+    {
+      "title": "UNESCO India-Africa Hackathon 2022",
+      "detail": "Finalist, selected in the top 220 out of 7,800+ candidates across 22+ countries."
+    },
+    {
+      "title": "Hack4Bengal 3.0",
+      "detail": "1st Runner-Up among 220+ teams across West Bengal."
+    },
+    {
+      "title": "LeetCode Weekly Contest 517",
+      "detail": "Ranked 1,090 out of 39,401 participants."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "issuer": "Microsoft",
+      "date": "Apr 2026",
+      "credentialId": "8B4D7D-5D14BB",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/PratyayRoy-9687/72A021F69BA9D3EF"
+    }
+  ]
+}
