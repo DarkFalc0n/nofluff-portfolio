@@ -1,10 +1,11 @@
 import { ArrowUpRight } from 'lucide-react'
+import { Outlet } from 'react-router'
 import { Button } from './components/Button'
-import { ExperienceTimeline } from './components/ExperienceTimeline'
+import { SectionNav } from './components/SectionNav'
 import { ThemeToggle } from './components/ThemeToggle'
 import { portfolio } from './data/portfolio'
 
-function App() {
+export function App() {
   return (
     <div className="min-h-svh bg-background text-foreground lg:h-svh lg:overflow-hidden">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-12 md:px-10 md:pt-16 max-lg:min-h-svh max-lg:pb-8 lg:h-full lg:flex-row lg:gap-10 lg:px-16 lg:pt-[72px] xl:px-[160px]">
@@ -42,7 +43,10 @@ function App() {
         </aside>
 
         <main className="min-h-0 lg:h-full lg:flex-1 lg:overflow-y-auto lg:pb-8">
-          <ExperienceTimeline items={portfolio.experience} />
+          <div className="w-full max-w-[542px]">
+            <SectionNav />
+            <Outlet />
+          </div>
         </main>
 
         <aside className="flex w-full shrink-0 flex-col items-end max-lg:mt-auto lg:h-full lg:w-[268px] lg:pb-8">
@@ -67,5 +71,3 @@ function App() {
     </div>
   )
 }
-
-export default App

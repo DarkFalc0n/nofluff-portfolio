@@ -7,8 +7,8 @@ type ExperienceTimelineProps = {
 
 /**
  * Two-column timeline: company/role on the left, location/dates on the right,
- * joined by a rail of dots and a connector line. Experience highlights are
- * intentionally not rendered here.
+ * joined by a rail of dots and a connector line. The visible section label is
+ * rendered by the shared SectionNav; highlights are intentionally not rendered.
  */
 export function ExperienceTimeline({
   items,
@@ -17,15 +17,8 @@ export function ExperienceTimeline({
   if (items.length === 0) return null
 
   return (
-    <section aria-labelledby="experience-title" className="w-full max-w-[542px]">
-      <h2
-        id="experience-title"
-        className="font-body text-[12px] leading-[17px] font-thin tracking-[6px] uppercase"
-      >
-        {title}
-      </h2>
-
-      <ol className="mt-[18px]">
+    <section aria-label={title} className="w-full max-w-[542px]">
+      <ol>
         {items.map((item, index) => {
           const isLast = index === items.length - 1
 
